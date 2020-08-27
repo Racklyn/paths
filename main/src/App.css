@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App {
+  width: 100%;    
+  height: 100vh;
+  max-height: 100vh; /*Toda a altura da tela*/
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+header{
+  display: flex;
+  height: 70px;
+  background-color: #EEE;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  color: #333;
+  box-shadow: 0px 1px 1px rgba(0,0,0,.4);
+  z-index: 3;
+}
+
+header *{
+  margin: 0px 10px;
+}
+
+header img{
+  height: 40px;
+}
+
+#btn-tema{
+  width: 80px;
+  height: 40px;
+  background-color: #07040fa8;
+  border: 1px solid #EEE;
+  position: absolute;
+  right: 30px;
+}
+
+main{
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: center;
+  background-color: #EEE;
+  z-index: 2;
+}
+
+canvas{
+  background-color: #181c22;
+  display: flex;
+  margin-bottom: 2px;
+  justify-self: center;
+  align-self: center;
+  justify-self: center;
+}
+.menu{
+  background-color: #EEE;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: -1px 0px 1px rgba(0,0,0,.4);
+  z-index: -1;
+}
+.button{
+  height: 60px;
+  width: 70%;
+  font-size: 20px;
+  color: #EEE;
+  background-color: #48D;
+  border: none;
+  border-radius: 10px;
+  transition: filter 0.2s;
+}
+.button:hover{
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+input{
+  font-size: 24px;
+  border: none;
+  border-style: solid;
+  border-color: #555;
+  border-width: 1px;
+  border-radius: 10px;
+  color: #333;
+}
+
+.menu form{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  color: #444;
+}
+.menu form h3{
+  font-family: cursive;
+}
+
+form div{
+  padding: 15px 0px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  height: 60px;
+}
+form div input{
+  width: 70px;
+  height: 50px;
+  text-align: center;
+}
+.form-delete div button{
+  background-color: #F32;
+  width: 60%;
+}
+hr{
+  width: 90%;
+}
+
+select{
+  font-size: 35px;
+  font-weight: bolder;
+  height: 40px;
+}
+
+.form-rota button, .form-rota input{
+  margin: 0px 5px;
+}
+.form-rota .button{
+  background-color: #2A6;
+}
+
+.info-rota{
+  flex-direction: column;
+  align-items: flex-start;
+  color: #181c22;
+  font-size: 20px;
+}
+#btn-limpar{
+  background: #45405090;
+  border: 2px solid #454050;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+  height: 40px;
+  font-size: 18px;
+}
